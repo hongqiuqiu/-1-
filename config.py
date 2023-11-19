@@ -21,17 +21,17 @@ available_setting = {
     "azure_deployment_id": "",  # azure 模型部署名称
     "azure_api_version": "",  # azure api版本
     # Bot触发配置
-    "single_chat_prefix": ["bot", "@bot"],  # 私聊时文本需要包含该前缀才能触发机器人回复
-    "single_chat_reply_prefix": "[bot] ",  # 私聊时自动回复的前缀，用于区分真人
+    "single_chat_prefix": ["红球", "@红球", "红球球", "@红球球"],  # 私聊时文本需要包含该前缀才能触发机器人回复
+    "single_chat_reply_prefix": "[红球球] ",  # 私聊时自动回复的前缀，用于区分真人
     "single_chat_reply_suffix": "",  # 私聊时自动回复的后缀，\n 可以换行
-    "group_chat_prefix": ["@bot"],  # 群聊时包含该前缀则会触发机器人回复
-    "group_chat_reply_prefix": "",  # 群聊时自动回复的前缀
+    "group_chat_prefix": ["红球", "@红球", "红球球", "@红球球"],  # 群聊时包含该前缀则会触发机器人回复
+    "group_chat_reply_prefix": "[红球球]",  # 群聊时自动回复的前缀
     "group_chat_reply_suffix": "",  # 群聊时自动回复的后缀，\n 可以换行
     "group_chat_keyword": [],  # 群聊时包含该关键词则会触发机器人回复
     "group_at_off": False,  # 是否关闭群聊时@bot的触发
-    "group_name_white_list": ["ChatGPT测试群", "ChatGPT测试群2"],  # 开启自动回复的群名称列表
+    "group_name_white_list":  ["ALL_GROUP"],  # 开启自动回复的群名称列表
     "group_name_keyword_white_list": [],  # 开启自动回复的群名称关键词列表
-    "group_chat_in_one_session": ["ChatGPT测试群"],  # 支持会话上下文共享的群名称
+    "group_chat_in_one_session":  ["ALL_GROUP"],  # 支持会话上下文共享的群名称
     "group_welcome_msg": "",  # 配置新人进群固定欢迎语，不配置则使用随机风格欢迎 
     "trigger_by_self": False,  # 是否允许机器人触发
     "text_to_image": "dall-e-2",  # 图片生成模型，可选 dall-e-2, dall-e-3
@@ -127,9 +127,9 @@ available_setting = {
     # 是否使用全局插件配置
     "use_global_plugin_config": False,
     # 知识库平台配置
-    "use_linkai": False,
-    "linkai_api_key": "",
-    "linkai_app_code": "",
+    "use_linkai": True,
+    "linkai_api_key": "Link_vtXzznp8yW09MTELQJRsFHo0LV90cj6Lt6jIUGS7gh",
+    "linkai_app_code": "8OOqVCNc",
     "linkai_api_base": "https://api.link-ai.chat",  # linkAI服务地址，若国内无法访问或延迟较高可改为 https://api.link-ai.tech
 }
 
